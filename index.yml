@@ -1,0 +1,7 @@
+store:
+  name: "Bia's Magical Apps"
+  url: "https://github.com/BeatrizCastex/custom-app-store"
+  apps:
+    - readarr-audio
+    - kavita
+    - calibre

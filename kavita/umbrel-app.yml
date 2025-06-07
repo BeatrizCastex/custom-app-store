@@ -1,0 +1,23 @@
+version: 0.1
+
+id: "kavita"
+title: "Kavita"
+description: "A self-hosted digital library for manga, comics, and ebooks."
+icon: ./icon.png
+developer: "Kavita"
+website: "https://www.kavitareader.com/"
+dependencies: []
+path: "/kavita"
+
+docker:
+  image: "kizaing/kavita:latest"
+  ports:
+    - "5001:5001"
+  env:
+    PUID: 1000
+    PGID: 1000
+    TZ: "America/Sao_Paulo"
+  volumes:
+    - "kavita-config:/config"
+    - "${UMBREL_ROOT}/data/Downloads/books:/data/books
+launch: "http://localhost:5001"

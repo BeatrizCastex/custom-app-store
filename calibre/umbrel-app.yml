@@ -1,0 +1,24 @@
+version: 0.1
+
+id: "calibre"
+title: "Calibre"
+description: "The full desktop Calibre library with remote UI support."
+icon: ./icon.png
+developer: "Calibre"
+website: "https://calibre-ebook.com/"
+dependencies: []
+path: "/calibre"
+
+docker:
+  image: "linuxserver/calibre:latest"
+  ports:
+    - "8081:8081"
+  env:
+    PUID: 1000
+    PGID: 1000
+    TZ: "America/Sao_Paulo"
+  volumes:
+    - "calibre-config:/config"
+    - "{UMBREL_ROOT}/data/Downloads/books:/data/Calibre Library"
+
+launch: "http://localhost:8081"
