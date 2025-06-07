@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: beamilkyway-kavita
+name: Kavita
+tagline: A self-hosted digital library for manga, comics, and ebooks.
+icon: ./icon.png
+category: Media
+version: "1.0.0"
+port: 5001
+description: >-
+
+
+developer: Kavita
+website: https://www.kavitareader.com/
+submitter: Bia
+submission: https://github.com/BeatrizCastex/my-app-store/beamilkyway-kavita
+repo: https://github.com/BeatrizCastex/my-app-store/
+gallery:
+
+releaseNotes: >-
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

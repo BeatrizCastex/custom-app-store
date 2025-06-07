@@ -1,0 +1,41 @@
+version: '3.7'
+services:
+  app_proxy:
+    environment:
+      APP_HOST: readarr_server_2
+      APP_PORT: 8778
+      PROXY_AUTH_WHITELIST: /api/*
+    container_name: readarr_app_proxy_2
+  server:
+    image: >-
+      linuxserver/readarr:develop-version-0.4.16.2793@sha256:f2f9280f1db32b6f6782d31a8c38995d604ae2f2008e7eed333bb713dd32b9af
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${UMBREL_ROOT}/home/Downloads:/downloads
+    restart: on-failure
+    container_name: readarr_server_2
+  mac:
+    image: >-
+      getumbrel/media-app-configurator:v1.3.0@sha256:67e75dd9f5a14402b7816119a8e20189bc2465484cea077909d164687e59742b
+    user: '1000:1000'
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${UMBREL_ROOT}/home/Downloads:/downloads
+    environment:
+      APP_ID: readarr-audio
+      APP_URL: http://readarr_server_1:8778
+      TRANSMISSION_HOST: transmission_server_1
+      TRANSMISSION_PORT: 9091
+      ROOT_FOLDER: /downloads/audiobooks
+      QBITTORRENT_INSTALLED: ${APP_READARR_QBITTORRENT_INSTALLED:-"false"}
+      QBITTORRENT_HOST: qbittorrent_server_1
+      QBITTORRENT_PORT: 8080
+      SABNZBD_INSTALLED: ${APP_READARR_SABNZBD_INSTALLED:-"false"}
+      SABNZBD_HOST: sabnzbd_web_1
+      SABNZBD_PORT: 8080
+      SABNZBD_API_KEY: ${APP_READARR_SABNZBD_API_KEY:-""}
+    container_name: readarr_mac_1

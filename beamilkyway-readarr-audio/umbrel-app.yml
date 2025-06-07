@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: beamilkyway-readarr-audio
+name: Readarr Audiobooks
+tagline: A second Readarr instance for managing audiobooks.
+icon: ./icon.png
+category: Media
+version: "1.0.0"
+port: 8778
+description: >-
+
+
+developer: Readarr
+website: https://readarr.com/
+submitter: Bia
+submission: https://github.com/BeatrizCastex/my-app-store/beamilkyway-readarr-audio
+repo: https://github.com/BeatrizCastex/my-app-store/
+gallery:
+
+releaseNotes: >-
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
