@@ -5,18 +5,18 @@ apps:
   - id: readarr-audio
     name: Readarr (Audio)
     description: Manage your audiobooks
-    repo: https://github.com/BeatrizCastex/custom-app-store
+    repo: https://github.com/BeatrizCastex/my-app-store
     path: readarr-audio
 
   - id: kavita
     name: Kavita
     description: Manga and book reader server
-    repo: https://github.com/BeatrizCastex/custom-app-store
+    repo: https://github.com/BeatrizCastex/my-app-store
     path: kavita
 
   - id: calibre
     name: Calibre
     description: Full Calibre UI, not Calibre-Web
-    repo: https://github.com/BeatrizCastex/custom-app-store
+    repo: https://github.com/BeatrizCastex/my-app-store
     path: calibre
 
