@@ -1,10 +1,9 @@
-version: "3.8"
+ilkversion: "3.8"
 
 services:
   app_proxy:
-    image: getumbrel/app-proxy:1.0.0
     environment:
-      APP_HOST: calibre
+      APP_HOST: beamilkyway-calibre_web_1
       APP_PORT: 8081
     restart: on-failure
 
