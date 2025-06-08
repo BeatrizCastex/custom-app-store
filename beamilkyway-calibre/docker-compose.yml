@@ -1,4 +1,4 @@
-ilkversion: "3.8"
+version: "3.7"
 
 services:
   app_proxy:
@@ -6,17 +6,13 @@ services:
       APP_HOST: beamilkyway-calibre_web_1
       APP_PORT: 8081
     restart: on-failure
-
-  calibre:
+  web:
     image: linuxserver/calibre:latest
-    container_name: calibre
-    environment:
-      PUID: 1000
-      PGID: 1000
-      TZ: "America/Sao_Paulo"
+    restart: on-failure
+    stop_grace_period: 1m
     ports:
-      - 8081:8081
+      - "8081:8081"
     volumes:
       - ${APP_DATA_DIR}/config:/config
-      - ${UMBREL_ROOT}/data/Downloads/books:/data/Calibre Library
+      - ${UMBREL_ROOT}/data/Downloads/books:/Calibre Library
     restart: on-failure
