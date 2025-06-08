@@ -2,10 +2,10 @@ version: '3.7'
 services:
   app_proxy:
     environment:
-      APP_HOST: readarr_server_2
+      APP_HOST: beamilkyeay-readarr_server_1
       APP_PORT: 8778
       PROXY_AUTH_WHITELIST: /api/*
-    container_name: readarr_app_proxy_2
+    container_name: beamilkyway-readarr_app_proxy_1
   server:
     image: >-
       linuxserver/readarr:develop-version-0.4.16.2793@sha256:f2f9280f1db32b6f6782d31a8c38995d604ae2f2008e7eed333bb713dd32b9af
@@ -16,7 +16,7 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
       - ${UMBREL_ROOT}/home/Downloads:/downloads
     restart: on-failure
-    container_name: readarr_server_2
+    container_name: beamilyway-readarr_server_1
   mac:
     image: >-
       getumbrel/media-app-configurator:v1.3.0@sha256:67e75dd9f5a14402b7816119a8e20189bc2465484cea077909d164687e59742b
