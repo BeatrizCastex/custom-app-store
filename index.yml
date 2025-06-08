@@ -1,22 +1,22 @@
 store:
-  name: "Bia's Magical Apps"
+  name: "Bia's Apps"
   url: "https://github.com/BeatrizCastex/custom-app-store"
 apps:
   - id: readarr-audio
     name: Readarr (Audio)
     description: Manage your audiobooks
     repo: https://github.com/BeatrizCastex/my-app-store
-    path: readarr-audio
+    path: beamilkyway-readarr-audio
 
   - id: kavita
     name: Kavita
     description: Manga and book reader server
     repo: https://github.com/BeatrizCastex/my-app-store
-    path: kavita
+    path: beamilkyway-kavita
 
   - id: calibre
     name: Calibre
     description: Full Calibre UI, not Calibre-Web
     repo: https://github.com/BeatrizCastex/my-app-store
-    path: calibre
+    path: beamilkyway-calibre
 
