@@ -1,10 +1,10 @@
 manifestVersion: 1
 id: beamilkyway-calibre
+category: media
 name: Calibre
-tagline: The full desktop Calibre library with remote UI support.
 icon: https://raw.githubusercontent.com/BeatrizCastex/my-app-store/main/icons/calibre.png
-category: Media
 version: "1.0.0"
+tagline: The full desktop Calibre library with remote UI support.
 port: 8081
 description: >-
   The full desktop Calibre library with remote UI support.
@@ -22,3 +22,5 @@ dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+permissions:
+  - STORAGE_DOWNLOADS
