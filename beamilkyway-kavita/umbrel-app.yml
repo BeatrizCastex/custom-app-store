@@ -1,24 +1,26 @@
 manifestVersion: 1
-id: beamilkyway-kavita
+id: beaver-kavita-reader
+category: media
 name: Kavita
-tagline: A self-hosted digital library for manga, comics, and ebooks.
-icon: ./icon.png
-category: Media
-version: "1.0.0"
-port: 5001
+icon: https://raw.githubusercontent.com/BeatrizCastex/my-app-store/main/icons/kavita.png
+version: "0.7.7"
+tagline: Digital ebook library which supports a vast array of file formats.
 description: >-
+  Lighting fast with a slick design, Kavita is a rocket fueled self-hosted digital library which supports a vast array of file formats. Install to start reading and share your server with your friends.
 
-
-developer: Kavita
-website: https://www.kavitareader.com/
 submitter: Bia
 submission: https://github.com/BeatrizCastex/my-app-store/beamilkyway-kavita
 repo: https://github.com/BeatrizCastex/my-app-store/
+developer: Kavita
+website: https://kavitareader.com
+dependencies: []
+repo: https://github.com/Kareadita/Kavita
+support: https://www.kavitareader.com/#support
+port: 5001
 gallery:
 
-releaseNotes: >-
-
-dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+permissions:
+  - STORAGE_DOWNLOADS
